@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/ishanAhuja/pm)](https://skills.sh/ishanAhuja/pm)
 
-Supervise and land the ready implementation tickets under a parent spec issue, one at a time.
+Run ready implementation tickets under a parent spec issue concurrently, then land them one at a time.
 
 ## Install
 
