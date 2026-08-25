@@ -19,17 +19,17 @@ Leave the parent issue unchanged and open. Manual deployments, production or dat
 
    Complete when the ordered live frontier and landing path are known.
 
-2. **Select one child.** Choose the first open `ready-for-agent` child whose blockers are closed. Prefer native sub-issue order; otherwise use dependency order, then issue number. Read that child and its comments in full, confirm its parent is the supplied spec, and refresh its declared blocking edges. Update the integration branch, record its commit as the predecessor, and resolve the repository's authoritative `implement` skill file. Prefer `.agents/skills/implement/SKILL.md`; otherwise locate the installed project copy.
+2. **Select one child.** Choose the first open `ready-for-agent` child whose blockers are closed. Prefer native sub-issue order; otherwise use dependency order, then issue number. Read that child and its comments in full, confirm its parent is the supplied spec, and refresh its declared blocking edges. Update the integration branch and record its commit as the predecessor.
 
-   Complete when one child URL, predecessor commit, and readable `implement` skill path are pinned. If no child is eligible, finish with the exact reason.
+   Complete when one child URL and predecessor commit are pinned. If no child is eligible, finish with the exact reason.
 
 3. **Dispatch one fresh task.** Create an isolated worktree task from the predecessor commit with this initial prompt:
 
    ```text
    Implement <full-child-issue-url>.
 
-   Before acting, read `<resolved-implement-skill-path>` in full and follow its
-   process. Treat that file as authoritative.
+   Before acting, call the Skill tool with `implement` and follow its process.
+   Treat that skill as authoritative.
    ```
 
    Add only context required for a correct start that is absent from the issue and repository guidance, such as the predecessor commit or integration branch. Keep exactly one implementation task active.
