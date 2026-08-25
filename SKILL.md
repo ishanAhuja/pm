@@ -32,7 +32,7 @@ Leave the parent issue unchanged and open. Manual deployments, production or dat
    Treat that skill as authoritative.
    ```
 
-   Add only context required for a correct start that is absent from the issue and repository guidance, such as the predecessor commit or integration branch. Keep exactly one implementation task active.
+   Communicate through context pointers: the child URL, predecessor commit, integration branch, and repository guidance. Add only context unavailable through those pointers. Keep exactly one implementation task active.
 
    Complete when the new task and its isolated worktree exist.
 
@@ -50,7 +50,7 @@ Leave the parent issue unchanged and open. Manual deployments, production or dat
 
    When landing triggers an authorized production deployment, wait for its terminal result before advancing. Continue only after success; stop with exact deployment evidence on failure.
 
-   Refresh the integration head and the entire live frontier, then return to step 2. Start no later task from a stale base.
+   After confirming the commit is reachable and the completed task's worktree is clean, clean up that task and worktree. Refresh the integration head and the entire live frontier, then return to step 2. Start no later task from a stale base.
 
 ## Finish
 
