@@ -1,0 +1,6 @@
+interface:
+  display_name: "PM"
+  short_description: "Run and land a spec issue's ready frontier"
+  default_prompt: "Use $pm to run and land the ready tickets under spec issue #123."
+policy:
+  allow_implicit_invocation: false
