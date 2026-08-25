@@ -23,7 +23,7 @@ Leave the parent issue unchanged and open. Manual deployments, production or dat
 
    Complete when the selected child URLs and predecessor commit are pinned. If none can be selected but implementation tasks remain active, return to supervision. If none are eligible or active, finish with the exact reason.
 
-3. **Dispatch fresh tasks.** Create one standalone Codex task in an isolated worktree from the shared predecessor for each selected child. Dispatch all of them before waiting, using this initial prompt:
+3. **Dispatch fresh tasks.** Create one isolated worktree task from the shared predecessor for each selected child. Dispatch all of them before waiting, using this initial prompt:
 
    ```text
    Implement <full-child-issue-url>.
